@@ -1,0 +1,34 @@
+[como usar o sistema de save]
+se você só quer saber como fazer um objeto ser salvo é bem simples:
+- adicione a tag "save" no objeto desejado
+- você precisa criar uma método chamado "save" dentro do objeto que quer salvar as informações
+  e dentro deste método retornar uma struct com as variaveis que quer salvar e seus valores,
+  e para carregar essas variaveis criar outro método chamado "load" que receberá uma struct como
+  argumento e essa struct terá as informações que esse objeto salvou, para mais detalhes pode
+  olhar qualquer objeto que tenha a tag "Save" e ver a implementação
+- você não precisa adicionar a posição x e y na struct de save, essas informações são salvas por padrão,
+  se você não quiser salvar nenhuma outra variavel não é necessário crias os métodos "save" e "load"
+
+as informações dentro da struct principal (room_info) vão ficar assim:
+struct principal
+
+{
+	"rm_dungeon1_section1": [
+		{ object_index, x, y, opened, image_index },
+		{ object_index, x, y, hp, state },
+		{ object_index, x, y, hp, state },
+		...
+	],
+	"rm_dungeon1_section2": [
+		{ object_index, x, y, hp },
+		{ object_index, x, y, hp },
+		{ object_index, x, y, weapon_info, have_depth },
+		...
+	],
+	"rm_dungeon1_section3": [
+		{ object_index, x, y },
+		{ object_index, x, y },
+		{ object_index, x, y },
+		...
+	]
+}

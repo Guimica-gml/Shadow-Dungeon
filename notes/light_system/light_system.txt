@@ -1,0 +1,28 @@
+[como usar o sistema de iluminação]
+- adicione a tag "light" ao objeto
+- crie a variavel "light_range" no objeto e de um numero como valor
+  essa variavel é o raio da luz que o objeto vai desenhar
+
+não precisa se preocupar se for usar a tile, o próprio código já vai indetificar onde
+tem uma tile set de iluminação e desenhar a luz, então é só posicionar as tiles onde quiser
+
+[como funciona]
+
+- com tile set:
+o código divide a sala em células do tamanho de cada célula da tile de iluminação,
+depois da um loop em cada célula e ve se tem um tile set de iluminação, todas as
+posições x e y que tem tile de iluminação são armazenadas dentro de uma array,
+depois o código da um loop pela array e desenha a luz em cada posição,
+a array é atualizada sempre que o player troca de sala, a array fica mais ou menos assim:
+
+[
+	{ x, y },  // Primeira luz
+	{ x, y },  // Segunda luz
+	{ x, y },  // Terceira luz
+	{ x, y },  // Quarta luz
+	...
+]
+
+- com objetos:
+o código só da um loop pelos objetos que tem a tag "light" (que ficam armazenados em uma array)
+e desenha a luz na posição x e y de cada objeto

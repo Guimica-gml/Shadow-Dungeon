@@ -1,0 +1,14 @@
+[como usar o sistema de profundidade]
+- adicione a tag "depth" no objeto (a profundiade depende do ponto de origem do sprite do objeto)
+- o objeto precisa ter um draw event com a função draw_self() (ou alguma função que faça o objeto se desenhar)
+
+[como funciona]
+todos os object_index com tag "depth" são guardados dentro de uma array,
+o código faz com que todas as intancias dos objetos na array (dentro da room)
+guardem seu id e posição y dentro de uma ds_grid, depois a lista é organizada
+de acordo com a posição y de cada intancia (da menor para a maior), depois
+o código desenha todas as instancias na ordem da ds_grid
+
+[observação]
+a primeira posição da lista sempre vai ser o objeto da faca (obj_knife), ou seja,
+se a faca existir será sempre desenhada na frente de todos os outros objetos
