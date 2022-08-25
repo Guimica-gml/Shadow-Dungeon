@@ -4,8 +4,8 @@ You can download the game for windows in my [itch.io](https://guimica.itch.io/sh
 
 ## Game concept
 This game was created in a week for a gamejam with the theme 'what doesn't kill you makes you stronger'.
-The whole idea of the game is that when you recieve damage you weapon gains one level (making it stroger),
-obvisouly you also lose 1 hp. The game contains a variety of guns, items and enemies, which will be listed later.
+The whole idea of the game is that when you recieve damage your weapon gains one level (making it stronger),
+obviously you also lose 1 hp. The game contains a variety of guns, items and enemies, which will be listed later.
 As the name implies the game is placed in a dungeon, which is composed by three floors and a final boss room.
 
 ## Gameplay
@@ -35,7 +35,7 @@ They have varied recoil and damage, but because of them game design and how they
 
 ## Items
 The items also don't have specif in game names, but they are:
-- Boots: increaes your speed each time you get one
+- Boots: increases your speed each time you get one
 - Heart: increases your hp by 1 point (you cannot get it if your health is full)
 - Ammunition: gives you one cartridge for your current gun (you cannot get it if not holding a gun)
 
