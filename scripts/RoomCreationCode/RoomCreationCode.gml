@@ -13,9 +13,9 @@ function create_menu()
 	
 	// Objects that the code will create [text, script]
 	var button = [
-		["JOGAR", start_game],
-		["CRÉDITOS", goto_rm_credits],
-		["SAIR", exit_game]
+		["PLAY", start_game],
+		["CREDITS", goto_rm_credits],
+		["EXIT", exit_game]
 	];
 	
 	// Gets coords for the initial position of the menu buttons
@@ -42,14 +42,14 @@ function create_credits()
 	instance_create_layer(0, 0, "Control", obj_credits);
 	
 	// Creates the object for title
-	create_title("Instances", "Créditos");
+	create_title("Instances", "Credits");
 	
 	// Creates the button that returns to the rm_menu
 	var _widht = 300;
 	var _height = 120;
 	var _x = 20;
 	var _y = view_hport[0] - _height - _x;
-	create_menu_button(_x, _y, _widht, _height, "Voltar", goto_rm_menu);
+	create_menu_button(_x, _y, _widht, _height, "Back", goto_rm_menu);
 }
 
 /// @description Creates all objects for gameover
@@ -59,8 +59,8 @@ function create_gameover()
 	instance_destroy(obj_player);
 	
 	// If player's hp is greater than zero the player wins
-	var _title = (global.hp <= 0) ? "FIM DE JOGO" : "VOCÊ VENCEU";
+	var _title = (global.hp <= 0) ? "GAME OVER" : "YOU WON";
 	
 	// Creates the object for title and subtitle
-	create_title("Instances", _title, "Aperte 'R' para voltar ao menu.");
+	create_title("Instances", _title, "Press 'R' to go back to main menu.");
 }

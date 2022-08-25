@@ -3,31 +3,33 @@ draw_set_halign(fa_middle);
 draw_set_font(global.fonts.tutorial);
 
 draw_text(320, 64,
-	"Bem vindo ao tutorial de Shadow Dungeon \n" +
-	"Você pode se mover com "+chr(global.key_up)+","+chr(global.key_left)+","+chr(global.key_down)+","+chr(global.key_right)+" e " +
-	"atacar com o mouse \n" +
-	"Vá para a sala a baixo para começar"
+	"Welcome to Shadow Dungeon's tutorial\n" +
+	"You can move using "+chr(global.key_up)+chr(global.key_left)+chr(global.key_down)+chr(global.key_right)+"\n" +
+	"and attack using the mouse\n" +
+	"Go to the room bellow to start"
 );
 
 draw_text(145, 325,
-	"Você pode pegar armas usando \na letra '"+ chr(global.key_interact) +"'. " +
-	"E pode soltá-las \nusando a letra '" + chr(global.key_throw) + "'. " + 
-	"Quando você \nleva dano o level da sua arma sobe"
+	"You can pick guns pressing\n" +
+	"the letter '"+ chr(global.key_interact) +"'. And can drop them\n" + 
+	"using the letter '" + chr(global.key_throw) + "'. When you \n" +
+	"take damage the level\n" +
+	"of your gun increases"
 );
 
 draw_text(500, 325,
-	"Você poderá achar armas em baús. \n" +
-	"Quando estiver com \npouca munição aperte \n" +
-	"'" + chr(global.key_reload) + "' para recarregar"
+	"You can find guns in chests.\n" +
+	"When you have no ammunition\n" +
+	"press '" + chr(global.key_reload) + "' to reload"
 );
 
 draw_text(850, 350,
-	"Nesse jogo você pode \nencontrar " +
-	"três itens \ndiferentes, " +
-	"que poderá usar \nem alguns momentos. \n" +
-	"Quando você pega um item \no level da " +
-	"arma cai em um \n(menos o cartucho), \n" +
-	"lembre-se disso."
+	"You can find 3 different\n" +
+	"items that you can use.\n" +
+	"When you pick an item the\n" +
+	"level of your gun drops\n" +
+	"(cartridge is the exception)\n" +
+	"remember that."
 );
 
 draw_set_font(-1);
