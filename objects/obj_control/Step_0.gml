@@ -8,7 +8,7 @@ if (global.room_type == "playable_room")
 		
 		if (global.pause)
 		{
-			pause_title = create_title(layer, "Pause", "Aperte 'Esc' para voltar ao jogo");
+			pause_title = create_title(layer, "Pause", "Press 'esc' to resume the game");
 			return;
 		}
 		
