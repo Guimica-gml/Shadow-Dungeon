@@ -4,22 +4,22 @@ You can download the game for windows in my [itch.io](https://guimica.itch.io/sh
 
 ## Game concept
 This game was created in a week for a gamejam with the theme 'what doesn't kill you makes you stronger'.
-The whole idea of the game is that when you recieve damage you weapon gains one level (making it stroger),
-obvisouly you also lose 1 hp. The game contains a variety of guns, items and enemies, which will be listed later.
+The whole idea of the game is that when you recieve damage your weapon gains one level (making it stronger),
+obviously you also lose 1 hp. The game contains a variety of guns, items and enemies, which will be listed later.
 As the name implies the game is placed in a dungeon, which is composed by three floors and a final boss room.
 
 ## Gameplay
 The basic gameplay consists of the player going from room to room in the dungeon killing the enemies with guns that can
 be found in chests spread through the map. The default weapon, for when the player in not holding a gun, is a knife.
 As described, every time the player is hit its gun gains 1 level point, the player can then regain hp by founding the heart item
-(described in the `Items` section). To avoid having the player getting to strong, it will lose a level point 
+(described in the `Items` section). To avoid having the player getting too strong, it will lose a level point 
 in its gun every time it gets an item, the only expection being ammunition.
 
 There are three levels, they are all very small, the game itself can be completed in less than 5 minutes,
 the last room contains a boss, with three different attacks that are chosen randomly.
 
-This was my first ever complete game, even though it's very small, a lot of the game design does not work,
-but it was good practice for any future games.
+This was my first ever complete game, even though it's very small and a lot of the game design does not work,
+it was a good practice for any future games.
 
 ## Weapons
 The guns don't have an specif name in game, but they basically are:
@@ -35,7 +35,7 @@ They have varied recoil and damage, but because of them game design and how they
 
 ## Items
 The items also don't have specif in game names, but they are:
-- Boots: increaes your speed each time you get one
+- Boots: increases your speed each time you get one
 - Heart: increases your hp by 1 point (you cannot get it if your health is full)
 - Ammunition: gives you one cartridge for your current gun (you cannot get it if not holding a gun)
 
